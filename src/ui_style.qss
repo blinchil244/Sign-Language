@@ -1,0 +1,111 @@
+/* Глобальные настройки */
+QMainWindow {
+    background-color: #121212;
+}
+QWidget {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #E0E0E0;
+}
+
+/* Вкладки */
+QTabWidget::pane {
+    border: 1px solid #333;
+    background: #121212;
+    top: -1px; 
+}
+QTabBar::tab {
+    background: #1E1E1E;
+    color: #888;
+    padding: 12px 25px;
+    margin-right: 2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-weight: bold;
+}
+QTabBar::tab:selected {
+    background: #252525;
+    color: #00E5FF;
+    border-bottom: 2px solid #00E5FF;
+}
+
+/* Группы (Рамки) */
+QGroupBox {
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-weight: bold;
+    color: #00E5FF;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 15px;
+    padding: 0 5px;
+    background-color: #121212; 
+}
+
+/* Кнопки */
+QPushButton {
+    background-color: #1F1F1F;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 12px;
+    color: #00E5FF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+QPushButton:hover {
+    background-color: #00E5FF;
+    color: #000;
+}
+QPushButton:pressed {
+    background-color: #00B8D4;
+}
+
+/* Кнопка записи (Спец стиль) */
+QPushButton#RecBtn[recording="true"] {
+    background-color: #D50000;
+    color: white;
+    border: 2px solid #FF1744;
+}
+QPushButton#RecBtn[recording="false"] {
+    border-color: #FF1744;
+    color: #FF1744;
+}
+QPushButton#RecBtn[recording="false"]:hover {
+    background-color: #FF1744;
+    color: white;
+}
+
+/* Поля ввода */
+QLineEdit {
+    padding: 10px;
+    background: #252525;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+QLineEdit:focus {
+    border: 1px solid #00E5FF;
+}
+
+/* Текстовые логи */
+QTextEdit {
+    background-color: #080808;
+    border: 1px solid #333;
+    color: #00E5FF;
+    font-family: 'Consolas', monospace;
+    font-size: 12px;
+}
+
+/* Метка результата */
+QLabel#Result {
+    font-size: 42px;
+    font-weight: 900;
+    color: #00E5FF;
+    padding: 15px;
+    background: #000;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
